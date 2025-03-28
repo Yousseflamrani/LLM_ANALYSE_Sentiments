@@ -29,6 +29,19 @@ def retrain_logistic_model():
     X = df["content"]
     y = df["label"]
 
+
+    # liste de stop wors
+
+    stop_word_fr = [
+
+        'le', 'la', 'les', 'un', 'une', 'et', 'en', 'de', 'des', 'du', 'au', 'aux',
+        'je', 'tu', 'il', 'elle', 'nous', 'vous', 'ils', 'elles', 'ce', 'ça', 'c\'est', 'est', 'sont', 'mais', 'ou',
+        'donc', 'ne', 'pas', 'plus', 'pour', 'avec', 'dans', 'sur', 'par', 'se', 'sa', 'son', 'ses', 'mon', 'ma', 'mes'
+    ]
+
+
+
+
     # Vectorisation
     vectorizer = TfidfVectorizer(stop_words='english')
     X_tfidf = vectorizer.fit_transform(X)
