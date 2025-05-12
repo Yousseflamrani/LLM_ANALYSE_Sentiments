@@ -82,6 +82,3 @@ Le modèle est entraîné sur des textes en anglais uniquement.
 ```
 
 
-
-### Auteur 
-# Youssef ALAOUI EL MRANI
